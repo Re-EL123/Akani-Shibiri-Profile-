@@ -47,7 +47,10 @@
 
     /* Header/Hero */
     header {
-      background-color: var(--bg-dark);
+      /* Dark overlay on top of the background image to ensure text readability */
+      background: 
+        linear-gradient(rgba(10, 10, 35, 0.7), rgba(10, 10, 35, 0.7)),
+        url('path/to/header-bg.jpg') center/cover no-repeat;
       color: var(--accent-yellow);
       min-height: 80vh;
       display: flex;
